@@ -1,4 +1,4 @@
-package com.craftinginterpreters.jlox;
+package com.craftinginterpreters.lox;
 
 import org.junit.Test;
 
