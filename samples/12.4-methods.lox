@@ -1,0 +1,2 @@
+var m = object.method;
+m(argument);
