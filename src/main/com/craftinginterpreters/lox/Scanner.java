@@ -176,6 +176,14 @@ class Scanner {
         addToken(STRING, value);
     }
 
+    private boolean match(char expected) {
+        if (isAtEnd()) return false;
+        if (source.charAt(current) != expected) return false;
+
+        current++;
+        return true;
+    }
+
     private char peek() {
         if (isAtEnd()) return '\0';
         return source.charAt(current);
@@ -198,14 +206,6 @@ class Scanner {
 
     private boolean isDigit(char c) {
         return c >= '0' && c <= '9';
-    }
-
-    private boolean match(char expected) {
-        if (isAtEnd()) return false;
-        if (source.charAt(current) != expected) return false;
-
-        current++;
-        return true;
     }
 
     private boolean isAtEnd() {
