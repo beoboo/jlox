@@ -1,3 +1,3 @@
 # jlox-tutorial
 
-Based on the [Crafting Interpreters](https://craftinginterpreters.com/).
+Based on the [Crafting Interpreters](https://craftinginterpreters.com/) book.
